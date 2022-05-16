@@ -50,7 +50,7 @@ describe("noteReducer", () => {
     expect(newState).toContainEqual({
       content: "state changes are made with actions",
       important: true,
-      id: 3,
+      id: 2,
     });
   });
 });
