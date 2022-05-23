@@ -20,11 +20,9 @@ const noteSlice = createSlice({
   initialState: [],
   reducers: {
     createNote(state, action) {
-      const content = action.payload;
+      const newNote = action.payload;
       state.push({
-        content,
-        important: false,
-        id: generateId(),
+        newNote,
       });
     },
     toggleImportanceOf(state, action) {
